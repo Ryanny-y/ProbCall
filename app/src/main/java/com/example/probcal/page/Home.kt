@@ -16,8 +16,8 @@ fun HomeComp (
         "Mean Calculator",
         "Population Variance Calculator",
         "Sample Variance Calculator",
-        "Standard Deviation Calculator",
-        "Z-Score Calculator"
+        "Z-Score Calculator",
+        "Z-Score Area Calculator",
     )
 
     LazyColumn(

@@ -7,9 +7,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.ui.Alignment
 
 @Composable
-fun MeanCalculatorPage(modifier: Modifier = Modifier) {
+fun MeanCalc(modifier: Modifier = Modifier) {
 
     var input by remember { mutableStateOf("") }
     var result by remember { mutableStateOf<Double?>(null) }
@@ -18,7 +19,8 @@ fun MeanCalculatorPage(modifier: Modifier = Modifier) {
         modifier = modifier
             .fillMaxSize()
             .padding(20.dp),
-        verticalArrangement = Arrangement.Top
+        verticalArrangement = Arrangement.Top,
+        horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
             text = "Mean Calculator",
