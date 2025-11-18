@@ -6,10 +6,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.example.probcal.page.HomeComp
-import com.example.probcal.pages.MeanCalc
-import com.example.probcal.pages.PopulationVarianceCalc
-import com.example.probcal.pages.SampleVarianceCalc
-import com.example.probcal.pages.ZScoreCalculatorCalc
+import com.example.probcal.page.calculators.*
 
 @Composable
 fun AppNavGraph(modifier: Modifier, navController: NavHostController) {
@@ -44,6 +41,9 @@ fun AppNavGraph(modifier: Modifier, navController: NavHostController) {
         }
         composable("z_score") {
             ZScoreCalculatorCalc(modifier)
+        }
+        composable("z_score_area") {
+            ZScoreAreaCalc(modifier)
         }
     }
 }

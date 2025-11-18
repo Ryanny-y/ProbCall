@@ -1,4 +1,4 @@
-package com.example.probcal.pages
+package com.example.probcal.page.calculators
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.text.KeyboardOptions
