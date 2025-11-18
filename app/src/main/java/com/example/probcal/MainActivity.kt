@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.probcal.ui.HeaderBar
+import com.example.probcal.ui.HomeComp
 import com.example.probcal.ui.theme.ProbCalTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,21 +23,14 @@ class MainActivity : ComponentActivity() {
             ProbCalTheme {
                 Scaffold(
                     modifier = Modifier.fillMaxSize(),
-                    topBar = { HeaderBar() }
+                    topBar = { HeaderBar() },
+                    bottomBar = {
+
+                    }
                 ) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding))
+                    HomeComp(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
     }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
 }
