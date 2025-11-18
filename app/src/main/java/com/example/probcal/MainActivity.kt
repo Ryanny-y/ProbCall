@@ -7,12 +7,11 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.probcal.ui.HeaderBar
-import com.example.probcal.ui.HomeComp
+import androidx.navigation.compose.rememberNavController
+import com.example.probcal.navigation.AppNavGraph
+import com.example.probcal.page.HeaderBar
+import com.example.probcal.page.HomeComp
 import com.example.probcal.ui.theme.ProbCalTheme
 
 class MainActivity : ComponentActivity() {
@@ -21,6 +20,8 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             ProbCalTheme {
+                val navController = rememberNavController();
+
                 Scaffold(
                     modifier = Modifier.fillMaxSize(),
                     topBar = { HeaderBar() },
@@ -28,7 +29,10 @@ class MainActivity : ComponentActivity() {
 
                     }
                 ) { innerPadding ->
-                    HomeComp(modifier = Modifier.padding(innerPadding))
+                    AppNavGraph(
+                        modifier = Modifier.padding(innerPadding),
+                        navController = navController
+                    )
                 }
             }
         }
