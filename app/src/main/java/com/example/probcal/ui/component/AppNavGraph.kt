@@ -8,6 +8,7 @@ import androidx.navigation.compose.composable
 import com.example.probcal.page.HomeComp
 import com.example.probcal.pages.MeanCalculatorPage
 import com.example.probcal.pages.PopulationVarianceCalc
+import com.example.probcal.pages.SampleVariancePage
 
 @Composable
 fun AppNavGraph(modifier: Modifier, navController: NavHostController) {
@@ -23,6 +24,7 @@ fun AppNavGraph(modifier: Modifier, navController: NavHostController) {
                     when (selected) {
                         "Mean Calculator" -> navController.navigate("mean_calculator")
                         "Population Variance Calculator" -> navController.navigate("population_variance_calculator")
+                        "Sample Variance Calculator" -> navController.navigate("sample_variance_calculator")
                     }
                 }
             )
@@ -33,6 +35,9 @@ fun AppNavGraph(modifier: Modifier, navController: NavHostController) {
         }
         composable("population_variance_calculator") {
             PopulationVarianceCalc(modifier)
+        }
+        composable("sample_variance_calculator") {
+            SampleVariancePage(modifier)
         }
     }
 }
