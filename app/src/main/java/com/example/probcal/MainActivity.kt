@@ -24,7 +24,7 @@ class MainActivity : ComponentActivity() {
 
                 Scaffold(
                     modifier = Modifier.fillMaxSize(),
-                    topBar = { HeaderBar() },
+                    topBar = { HeaderBar(navController = navController) },
                     bottomBar = {
 
                     }
