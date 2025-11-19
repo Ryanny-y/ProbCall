@@ -24,7 +24,6 @@ fun CalculatorCard(
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(horizontal = 16.dp, vertical = 6.dp)
             .border(
                 width = 1.dp,
                 color = Color(0xFFe9edf2),
