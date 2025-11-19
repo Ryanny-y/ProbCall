@@ -53,7 +53,7 @@ fun MeanCalc(modifier: Modifier = Modifier) {
                         input = it
                         error = null
                     },
-                    label = { Text("(e.g., 1, 2, 3)", fontSize = 12.sp) },
+                    label = { Text("(e.g., 4, 6, 8, 10)", fontSize = 12.sp) },
                     modifier = Modifier.fillMaxWidth(),
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal)
                 )

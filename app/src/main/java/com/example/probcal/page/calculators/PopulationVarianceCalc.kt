@@ -206,7 +206,8 @@ fun PopulationVarianceCalc(modifier: Modifier = Modifier) {
                     modifier = Modifier
                         .padding(16.dp)
                         .fillMaxWidth(),
-                    horizontalAlignment = Alignment.CenterHorizontally
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.spacedBy(8.dp)
                 ) {
                     Text("Standard Deviation Result", style = MaterialTheme.typography.titleSmall)
 
@@ -242,7 +243,7 @@ fun PopulationVarianceCalc(modifier: Modifier = Modifier) {
                             Text("Step-By-Step Solution", style = MaterialTheme.typography.titleMedium)
                         }
                         item { StepCard("Step 1: Use population variance (σ²)", "σ² = ${"%.4f".format(variance)}") }
-                        item { StepCard("Step 2: Take square root", "√(${variance}) = ${"%.4f".format(sd)}") }
+                        item { StepCard("Step 2: Take square root", "√(${"%.4f".format(variance)}) = ${"%.4f".format(sd)}") }
                         item { StepCard("Step 3: Final standard deviation", "σ = ${"%.4f".format(sd)}") }
                     }
                 }
