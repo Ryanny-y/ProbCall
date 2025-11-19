@@ -1,5 +1,6 @@
 package com.example.probcal.page
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.MaterialTheme
@@ -26,7 +27,7 @@ fun HeaderBar(
                 start = 10.dp,
                 end = 10.dp
             )
-            .height(60.dp),
+            .height(40.dp),
         contentAlignment = Alignment.CenterStart
     ) {
         Text(
