@@ -23,7 +23,7 @@ fun HeaderBar(
         modifier = modifier
             .fillMaxWidth()
             .padding(
-                top = 28.dp,
+                top = 40.dp,
                 start = 10.dp,
                 end = 10.dp
             )

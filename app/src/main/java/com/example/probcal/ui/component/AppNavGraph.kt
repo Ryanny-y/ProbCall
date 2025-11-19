@@ -21,7 +21,7 @@ fun AppNavGraph(modifier: Modifier, navController: NavHostController) {
                 onCalculatorClick = { selected ->
                     when (selected) {
                         "Mean Calculator" -> navController.navigate("mean_calculator")
-                        "Population Variance Calculator" -> navController.navigate("population_variance_calculator")
+                        "Population Variance  Calculator" -> navController.navigate("population_variance_calculator")
                         "Sample Variance Calculator" -> navController.navigate("sample_variance_calculator")
                         "Z-Score Calculator" -> navController.navigate("z_score")
                         "Z-Score Area Calculator" -> navController.navigate("z_score_area")
