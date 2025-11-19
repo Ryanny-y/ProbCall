@@ -13,9 +13,18 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
+    primary = Cyan100,
+    secondary = Color.White,
+//    tertiary = Cyan100,
+    background = Color(0xFF151D28),
+    onBackground = Color.White,
+    surface = Cyan100,
+    onSurface = Color.White,
+
+    onSurfaceVariant = Color(0xB3FFFFFF),
+
+//    Card
+    surfaceContainerHighest = Color(0xFF1F2733),
 )
 
 private val LightColorScheme = lightColorScheme(
@@ -34,13 +43,7 @@ private val LightColorScheme = lightColorScheme(
 //    onPrimary = Color.White,
 //    onSecondary = Color.White,
 //    onTertiary = Color.White,
-//    onBackground = Color(0xFF1C1B1F),
-//    onSurface = Color(0xFF1C1B1F),
-
-//    surfaceContainerLowest = Cyan100,
-//    surfaceContainerLow = Cyan100,
-//    surfaceContainer = Cyan100,
-//    surfaceContainerHigh = Cyan100,
+//    onBackground = Color(0xFF1C1B1F)
 )
 
 @Composable
