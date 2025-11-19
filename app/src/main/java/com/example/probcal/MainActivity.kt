@@ -11,7 +11,6 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
 import com.example.probcal.navigation.AppNavGraph
 import com.example.probcal.page.HeaderBar
-import com.example.probcal.page.HomeComp
 import com.example.probcal.ui.theme.ProbCalTheme
 
 class MainActivity : ComponentActivity() {
@@ -25,9 +24,6 @@ class MainActivity : ComponentActivity() {
                 Scaffold(
                     modifier = Modifier.fillMaxSize(),
                     topBar = { HeaderBar(navController = navController) },
-                    bottomBar = {
-
-                    }
                 ) { innerPadding ->
                     AppNavGraph(
                         modifier = Modifier.padding(innerPadding),
