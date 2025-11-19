@@ -20,10 +20,10 @@ private val DarkColorScheme = darkColorScheme(
 
 private val LightColorScheme = lightColorScheme(
     primary = Cyan100,
-    secondary = Cyan100,
-    tertiary = Color.White,
+    secondary = Cyan70,
+//    tertiary = Cyan100,
     background = Color(0xFFF8FAFC),
-//    surface = Cyan100,
+    surface = Cyan100,
     onSurface = Color(0xFF0F172A),
 
 
